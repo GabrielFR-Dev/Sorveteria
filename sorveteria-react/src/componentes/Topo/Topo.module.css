@@ -1,0 +1,33 @@
+@import url(/globals.css);
+
+.container_topo {
+    background: var(--amarelo) ;
+    width: 100%;
+}
+.topo {
+    max-width: 1280px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+
+}
+
+.navegacao {
+    display: flex;
+    font-size: 18px;
+    padding: 20px 0px;
+    gap: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--escuro)
+}
+
