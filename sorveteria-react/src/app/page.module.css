@@ -1,0 +1,29 @@
+@import url('/global.css');
+
+.main {
+    box-sizing: border-box;
+
+}
+.secao_banner {
+    background: var(--amarelo);
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    background-image: url('/banner-home.png');
+    background-repeat: no-repeat;
+    background-position: center;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao_banner h1 {
+    font-size: 100px;
+    color: var(--branco);
+    text-shadow: 3px 5px 2px #474747;
+    text-align: center;
+    
+
+}
+
+
