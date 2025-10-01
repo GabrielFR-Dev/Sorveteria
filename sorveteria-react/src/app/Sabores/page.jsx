@@ -11,7 +11,7 @@ import ImgLimao from "/public/sabor-limao.png";
 
 export default function Sabores() {
     return (
-        <main>
+        <div>
             <section className={estilos.secao_banner}>
                 <div className={estilos.container_banner}>
                     <Image className={estilos.img} src={BannerSabores} />
@@ -78,6 +78,6 @@ export default function Sabores() {
                 </div>
             </section>
 
-        </main>
+        </div>
     )
 };
