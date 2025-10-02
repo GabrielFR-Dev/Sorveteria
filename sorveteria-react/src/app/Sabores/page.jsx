@@ -13,12 +13,7 @@ export default function Sabores() {
     return (
         <div>
             <section className={estilos.secao_banner}>
-                <div className={estilos.container_banner}>
-                    <Image className={estilos.img} src={BannerSabores} />
-                    <div className={estilos.titulo}>
-                        <h1>NOSSOS SABORES</h1>
-                    </div>
-                </div>
+                <h1>NOSSOS SABORES</h1>
             </section>
 
             <section className={estilos.secao_sabores}>
@@ -45,7 +40,7 @@ export default function Sabores() {
                     </div>
 
                     <div className={estilos.card}>
-                        <Image className={estilos.img} src={ImgCookies} alt="Cookies"/>
+                        <Image className={estilos.img} src={ImgCookies} alt="Cookies" />
                         <h3>Sorvete Cookies & Avelã</h3>
                         <p>
                             O nosso melhor sorvete. Você vai adorar o sabor.
@@ -53,7 +48,7 @@ export default function Sabores() {
                     </div>
 
                     <div className={estilos.card}>
-                        <Image className={estilos.img} src={ImgKiwi} alt="Kiwi"/>
+                        <Image className={estilos.img} src={ImgKiwi} alt="Kiwi" />
                         <h3>Sorvete Cookies & Avelã</h3>
                         <p>
                             O nosso melhor sorvete. Você vai adorar o sabor.
@@ -61,7 +56,7 @@ export default function Sabores() {
                     </div>
 
                     <div className={estilos.card}>
-                        <Image className={estilos.img} src={ImgMorango} alt="Morango"/>
+                        <Image className={estilos.img} src={ImgMorango} alt="Morango" />
                         <h3>Sorvete de Morango</h3>
                         <p>
                             Sorvete de morango gourmet. Tradicional e saboroso.
@@ -69,7 +64,7 @@ export default function Sabores() {
                     </div>
 
                     <div className={estilos.card}>
-                        <Image className={estilos.img} src={ImgLimao} alt="Limao"/>
+                        <Image className={estilos.img} src={ImgLimao} alt="Limao" />
                         <h3>Sorvete Limão Siciliano</h3>
                         <p>
                             O incrivel sorvete gourmet de limão siciliano vai te encantar.

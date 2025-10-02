@@ -1,0 +1,111 @@
+.secao_banner {
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    background-image: url('/banner-sabores.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao_banner h1 {
+    display: flex;
+    /* Adiciona display flex */
+    font-size: 77px;
+    /* Tamanho da fonte */
+    margin: auto;
+    /* Centraliza horizontalmente */
+    color: var(--branco);
+    /* Cor do texto */
+    text-shadow: 3px 5px 2px #474747;
+    /* Sombra do texto */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+
+
+.secao_sabores {
+    width: 100%; /* Largura total */
+   
+    gap: 40px; /* Espaçamento entre os elementos */
+    padding: 100px 20px; /* Espaçamento interno */
+}
+.secao_sabores h2 {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.container_cards {
+    max-width: 1024px; /* Define a largura máxima */
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de tamanhos iguais */
+    gap: 20px; /* Espaçamento entre os cards */
+    margin: 0 auto; /* Centraliza o container */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.card {
+    width: 285px; /* Largura fixa do card */
+    padding: 45px; /* Espaçamento interno do card */
+    gap: 10px; /* Espaçamento entre os elementos internos */
+    text-align: center; /* Centraliza o conteúdo do card */
+    background-color: #f9f9f9; /* Cor de fundo do card */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave */
+}
+
+.card:hover {
+    transform: scale(1.0); /* Aumenta o tamanho do card em 10% */
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.img {
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do card */
+}
+
+.card h3 {
+    font-size: 18px; /* Tamanho da fonte do título */
+    margin-top: 10px; /* Espaçamento acima do título */
+}
+
+.card p {
+    font-size: 16px; /* Tamanho da fonte do parágrafo */
+    margin-top: 10px; /* Espaçamento acima do parágrafo */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .container_cards {
+        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    .container_cards {
+        grid-template-columns: 1fr; /* Ajusta para 1 coluna em telas pequenas */
+    }
+
+    .card {
+        width: 100%; /* Faz o card ocupar toda a largura disponível */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px; /* Reduz o espaçamento interno em telas muito pequenas */
+        
+    }
+    
+
+    .img {
+        width: 80px; /* Reduz o tamanho da imagem */
+        height: 80px; /* Reduz o tamanho da imagem */
+    }
+}
