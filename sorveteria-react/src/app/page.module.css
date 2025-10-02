@@ -18,12 +18,28 @@
 }
 
 .secao_banner h1 {
-    font-size: 100px;
-    color: var(--branco);
-    text-shadow: 3px 5px 2px #474747;
-    text-align: center;
-    
+    display: flex; /* Adiciona display flex */
+    font-size: 77px; /* Tamanho da fonte */
+    margin: auto;  /* Centraliza horizontalmente */      
+    color: var(--branco); /* Cor do texto */
+    text-shadow: 3px 5px 2px #474747; /* Sombra do texto */
+    text-align: center; /* Centraliza o texto */       
+}
+
+
+.container_cards {
+    width: 100%; 
+}
+
+.card_home {
+    width: 100%;
 
 }
+
+.container_imagem {
+
+}
+
+
 
 
