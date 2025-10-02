@@ -2,12 +2,12 @@ import Image from "next/image";
 import Logo from "/public/logo.png";
 import estilos from "./Rodape.module.css";
 
-export default function Rodape () {
+export default function Rodape() {
     return (
-        <footer>
-            <Image className={estilos.logo} src={Logo} alt="Logo"/>
+        <footer className={estilos.footer}>
+
             <div className={estilos.container_divs}>
-                
+                <Image className={estilos.logo} src={Logo} alt="Logo" />
                 <div className={estilos.div}>
                     <h4>ENDEREÇO</h4>
                     <p>
@@ -20,18 +20,20 @@ export default function Rodape () {
                     <p>
                         info@meusite.com
                         tel(xx) xxxxx-xxxx
-                    </p> 
+                    </p>
                 </div>
 
                 <div className={estilos.div}>
                     <h4>HORÁRIOS</h4>
                     <p>
                         ABERTO TODOS OS DIAS 10:00 - 22:00
-                    </p> 
+                    </p>
                 </div>
             </div>
 
-            <p>Gelateria. Orgulhosamente desenvolvido por 'Gabriel ferreira'</p>
+            <div className={estilos.autoral}>
+                <p className={estilos.paragrafo}>Orgulhosamente desenvolvido por 'Gabriel ferreira'</p>
+            </div>
         </footer>
     )
 };

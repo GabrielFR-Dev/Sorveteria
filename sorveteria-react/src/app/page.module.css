@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
 }
+
 .secao_banner {
     background: var(--amarelo);
     width: 100%;
@@ -11,35 +12,104 @@
     height: 100vh;
     background-image: url('/banner-home.png');
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .secao_banner h1 {
-    display: flex; /* Adiciona display flex */
-    font-size: 77px; /* Tamanho da fonte */
-    margin: auto;  /* Centraliza horizontalmente */      
-    color: var(--branco); /* Cor do texto */
-    text-shadow: 3px 5px 2px #474747; /* Sombra do texto */
-    text-align: center; /* Centraliza o texto */       
+    display: flex;
+    /* Adiciona display flex */
+    font-size: 77px;
+    /* Tamanho da fonte */
+    margin: auto;
+    /* Centraliza horizontalmente */
+    color: var(--branco);
+    /* Cor do texto */
+    text-shadow: 3px 5px 2px #474747;
+    /* Sombra do texto */
+    text-align: center;
+    /* Centraliza o texto */
 }
 
-
-.container_cards {
-    width: 100%; 
-}
 
 .card_home {
+    display: flex;
+    /* Define o layout como flexbox */
     width: 100%;
-
+    /* Largura total */
+    height: 100%;
+    /* Altura total */
+    flex-wrap: wrap;
+    /* Permite que os itens quebrem linha em telas menores */
 }
 
 .container_imagem {
-
+    max-width: 50%;
+    /* Define a largura máxima como 50% */
+    flex: 1;
+    /* Permite que o container de imagem se ajuste dinamicamente */
 }
 
+.img {
+    width: 100%;
+    /* Largura total da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
 
+.container_textual {
+    max-width: 50%;
+    /* Define a largura máxima como 50% */
+    margin: auto;
+    /* Centraliza o container */
+    padding: 100px 50px;
+    /* Define o espaçamento interno */
+    gap: 20px;
+    /* Espaçamento entre os elementos internos */
+    text-align: center;
+    /* Centraliza o texto */
+    display: flex;
+    /* Define o layout como flexbox */
+    flex-direction: column;
+    /* Organiza os itens em uma coluna */
+    justify-content: center;
+    /* Centraliza os itens verticalmente */
+}
 
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+    .card_home {
+        flex-direction: column;
+        /* Alinha os itens em uma coluna */
+    }
 
+    .container_imagem,
+    .container_textual {
+        max-width: 100%;
+        /* Define a largura máxima como 100% */
+        padding: 20px;
+        /* Reduz o espaçamento interno */
+    }
+}
+
+/* Media query para telas menores que 480px */
+@media (max-width: 480px) {
+    .container_textual {
+        padding: 10px;
+        /* Reduz ainda mais o espaçamento interno */
+        gap: 10px;
+        /* Reduz o espaçamento entre os elementos */
+    }
+
+    .card_home {
+        gap: 20px;
+        /* Adiciona espaçamento entre os itens */
+    }
+
+    .img {
+        width: 100%;
+        /* Garante que a imagem ocupe toda a largura disponível */
+    }
+}

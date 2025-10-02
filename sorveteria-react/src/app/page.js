@@ -17,7 +17,6 @@ export default function Home() {
       <section className={estilos.container_cards}>
         {/* Seção dos sabores */}
         <section className={estilos.card_home}>
-
           {/* Container para a imagem */}
           <div className={estilos.container_imagem}>
             <Image className={estilos.img} src={BannerSabores} alt="Sabores" /> {/* Imagem do banner de sabores */}
@@ -31,7 +30,6 @@ export default function Home() {
               Sorvete bom é aquele feito com os melhores ingredientes! Aqui na gelateria todos os nossos produtos são naturais, à base de frutas e sem nenhum conservante! Também temos opções sem lactose e sem açúcar. Venha conhecer e perceber que tem como o sorvete ser delicioso e saudável ao mesmo tempo!
             </p> {/* Descrição dos sabores */}
           </div>
-
         </section>
 
         {/* Seção dos eventos */}
@@ -46,7 +44,31 @@ export default function Home() {
             </p> {/* Descrição dos eventos */}
           </div>
 
+          <div className={estilos.container_imagem}>
+            <Image className={estilos.img} src={BannerEventos} alt="Eventos" /> {/* Imagem do banner de eventos */}
+          </div>
         </section>
+
+        {/* Seção sobre nós */}
+
+        <section className={estilos.card_home}>
+          <div className={estilos.container_imagem}>
+            <Image className={estilos.img} src={BannerSobreNos} alt="Sobre Nós" /> {/* Imagem do banner sobre nós */}
+          </div>
+
+          {/* Container para o texto */}
+          <div className={estilos.container_textual}>
+            <h2> SOBRE NÓS </h2> {/* Título da seção */}
+            <span> Alegria em cada casquinha! </span> {/* Subtítulo */}
+            <p>
+              Venha tomar o melhor sorvete da região aqui com a gente! Nós estamos há anos no mercado produzindo o que tem de melhor para o 	nosso cliente e você não pode ficar fora dessa. Venha nos fazer uma visita e aproveite o melhor atendimento e o melhor sorvete da cidade.
+            </p> {/* Descrição sobre nós */}
+          </div>
+
+        </section>
+
+
+
       </section>
 
     </main>

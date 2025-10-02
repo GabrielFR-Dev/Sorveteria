@@ -1,0 +1,71 @@
+.footer {
+    width: 100%; /* Largura total */
+    background-color: var(--escuro); /* Cor de fundo */
+    color: var(--branco); /* Cor do texto */
+    display: flex; /* Define o layout como flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+.container_divs {
+    max-width: 1024px; /* Define a largura máxima */
+    width: 100%; /* Largura total */
+    padding: 50px 20px; /* Reduz o espaçamento interno */
+    display: flex; /* Define o layout como flexbox */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+    gap: 38px; /* Adiciona espaçamento entre os itens */
+}
+
+
+
+.logo {
+    width: 100px; /* Largura da logo */
+    height: 100px; /* Altura da logo */
+    margin: 0 auto; /* Centraliza a logo horizontalmente */
+}
+
+.div {
+    width: 20%; /* Define a largura como 20% */
+    height: auto; /* Ajusta a altura automaticamente */
+    text-align: left; /* Centraliza o texto */
+}
+.div h4{
+    font-size: 18px;
+}
+.div p {
+    font-size: 16px;
+}
+.autoral {
+    font-size: 16px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+    .container_divs {
+        flex-direction: column; /* Organiza os itens em uma coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .div {
+        width: 100%; /* Define a largura como 100% */
+        margin-bottom: 20px; /* Adiciona espaçamento inferior */
+    }
+}
+
+/* Media query para telas menores que 480px */
+@media (max-width: 480px) {
+    .container_divs {
+        padding: 20px; /* Reduz o espaçamento interno */
+    }
+
+    .logo {
+        width: 80px; /* Reduz a largura da logo */
+        height: 80px; /* Reduz a altura da logo */
+    }
+}
