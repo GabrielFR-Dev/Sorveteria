@@ -1,0 +1,54 @@
+.secao_banner {
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    background-image: url('/banner-sobre.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao_banner h1 {
+    display: flex;
+    /* Adiciona display flex */
+    font-size: 77px;
+    /* Tamanho da fonte */
+    margin: auto;
+    /* Centraliza horizontalmente */
+    color: var(--branco);
+    /* Cor do texto */
+    text-shadow: 3px 5px 2px #474747;
+    /* Sombra do texto */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+.secao_sobre {
+    max-width: 1024px;
+    padding: 100px 20px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.secao_sobre h2 {
+    font-size: 40px;
+}
+.secao_sobre span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container_img {
+    width: 100%;
+    display: flex;
+}
+.img {
+    width: 50%;
+    height: auto;
+}
